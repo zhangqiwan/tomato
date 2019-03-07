@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SecondActivity"
+            android:label="Add Activity">
+            <intent-filter>
+                <action android:name="com.helianthus.tomato.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.helianthus.tomato.MY_CATEGORY"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

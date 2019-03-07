@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_item"
+        android:title="Add"
+        />
+    <item
+        android:id="@+id/remove_item"
+        android:title="Remove"
+        />
+    <item
+        android:id="@+id/modify_item"
+        android:title="Modify"
+        />
+    <item
+        android:id="@+id/query_item"
+        android:title="Query"
+        />
+    <item
+        android:id="@+id/browser_item"
+        android:title="Browser"
+        />
+
+</menu>
