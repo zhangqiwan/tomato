@@ -9,4 +9,10 @@
         android:id="@+id/button1"
         android:text="确定"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="显示"
+        />
 </LinearLayout>

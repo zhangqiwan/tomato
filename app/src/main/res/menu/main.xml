@@ -20,5 +20,9 @@
         android:id="@+id/browser_item"
         android:title="Browser"
         />
+    <item
+        android:id="@+id/dial_item"
+        android:title="Dial"
+        />
 
 </menu>
