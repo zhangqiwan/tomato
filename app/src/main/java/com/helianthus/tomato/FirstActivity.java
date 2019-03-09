@@ -30,6 +30,7 @@ public class FirstActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, SecondActivity.class);
                 startActivity(intent);
                 break;
+
             //隐式intent启动活动
             case R.id.remove_item:
                 Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT).show();
@@ -37,6 +38,7 @@ public class FirstActivity extends AppCompatActivity {
                 removeIntent.addCategory("com.helianthus.tomato.MY_CATEGORY");
                 startActivity(removeIntent);
                 break;
+
             //向下传递数据
             case R.id.modify_item:
                 Toast.makeText(this, "You clicked Modify", Toast.LENGTH_SHORT).show();
@@ -44,15 +46,15 @@ public class FirstActivity extends AppCompatActivity {
                 Intent modifyIntent = new Intent(this, SecondActivity.class);
                 modifyIntent.putExtra("extra_info", data);
                 startActivity(modifyIntent);
-
                 break;
 
             //向上传递数据
             case R.id.query_item:
                 Toast.makeText(this, "You clicked Query", Toast.LENGTH_SHORT).show();
                 Intent queryIntent = new Intent(FirstActivity.this, SecondActivity.class);
-                startActivityForResult(queryIntent, 11);
+                startActivityForResult(queryIntent, 1);
                 break;
+
             //不同程序间的活动启动，浏览器
             case R.id.browser_item:
                 Toast.makeText(this, "You clicked Query", Toast.LENGTH_SHORT).show();
@@ -65,8 +67,8 @@ public class FirstActivity extends AppCompatActivity {
                 browserIntent.setData(Uri.parse("http://www.baidu.com"));
                 //startActivity(browserIntent);
                 startActivity(browserIntent);
-
                 break;
+
             //不同程序间的活动启动，打电话
             case R.id.dial_item:
                 Toast.makeText(this, "You clicked Dial", Toast.LENGTH_SHORT).show();
@@ -79,10 +81,16 @@ public class FirstActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * 执行回滚数据的显示
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(final int requestCode, int resultCode, @Nullable Intent data) {
         switch (requestCode) {
-            case 11:
+            case 1:
                 if (resultCode == RESULT_OK) {
                     final String returnData = data.getStringExtra("return_info");
                     //Log.d("FirstActivity",returnData);
@@ -90,7 +98,7 @@ public class FirstActivity extends AppCompatActivity {
                     button2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Toast.makeText(FirstActivity.this,returnData,Toast.LENGTH_SHORT);
+                            Toast.makeText(FirstActivity.this,returnData,Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
