@@ -24,5 +24,11 @@
         android:id="@+id/dial_item"
         android:title="Dial"
         />
+    <item
+        android:id="@+id/mode_item"
+        android:title="SingleInstance" />
+    <item
+        android:id="@+id/removeAll_item"
+        android:title="RemoveAll" />
 
 </menu>

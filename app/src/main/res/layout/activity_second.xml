@@ -17,5 +17,17 @@
         android:text="Back"
         />
 
+    <Button
+        android:id="@+id/start_singletop_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start the activity by singleTop mode" />
+
+    <Button
+        android:id="@+id/start_singletop_mode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start other activity by singleTop mode" />
+
 
 </LinearLayout>
