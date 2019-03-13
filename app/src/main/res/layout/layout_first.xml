@@ -58,4 +58,10 @@
         android:layout_height="wrap_content"
         android:text="open the forth activity" />
 
+    <Button
+        android:id="@+id/listview_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open the listview activity" />
+
 </LinearLayout>

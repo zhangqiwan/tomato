@@ -271,6 +271,14 @@ public class FirstActivity extends BasicActivity {
                 startActivity(intent);
             }
         });
+        Button listviewActivity = (Button) findViewById(R.id.listview_activity);
+        listviewActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, ListviewActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -50,7 +50,8 @@
             android:name=".ThirdActivity"
             android:launchMode="singleInstance" />
         <activity android:name=".ForthActivity" />
-        <activity android:name=".PersonalActivity"></activity>
+        <activity android:name=".PersonalActivity" />
+        <activity android:name=".ListviewActivity"></activity>
     </application>
 
 </manifest>
