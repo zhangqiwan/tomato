@@ -52,6 +52,7 @@
         <activity android:name=".ForthActivity" />
         <activity android:name=".PersonalActivity" />
         <activity android:name=".ListviewActivity"></activity>
+        <activity android:name="com.helianthus.banana.FruitActivity"></activity>
     </application>
 
 </manifest>

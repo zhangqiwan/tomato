@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.helianthus.banana.FruitActivity;
+
 public class SecondActivity extends BasicActivity {
 
     @Override
@@ -35,6 +37,7 @@ public class SecondActivity extends BasicActivity {
         Button button22 = (Button)findViewById(R.id.button22);
         Button startSingletopMode = (Button) findViewById(R.id.start_singletop_mode);
         Button startSingletopMode1 = (Button) findViewById(R.id.start_singletop_mode1);
+        Button startFruitActivity = (Button)findViewById(R.id.start_fruit_activity);
 
         startSingletopMode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +68,14 @@ public class SecondActivity extends BasicActivity {
                 intent.putExtra("return_info","Hello FirstActivity...");
                 setResult(RESULT_OK,intent);
                 finish();
+            }
+        });
+
+        startFruitActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, FruitActivity.class);
+                startActivity(intent);
             }
         });
 
